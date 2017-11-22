@@ -4,5 +4,5 @@
 
 if [[ ${DEFAULT_CONFIG} == "true" ]]; then
   echo "Setting ServerName variable to: ${HOSTNAME}"
-  sed -i 's|#ServerName www.example.com:80|ServerName '${HOSTNAME}':80|g' /etc/httpd/conf/httpd.conf
+  sed -i 's|#ServerName www.example.com:80|ServerName '${HOSTNAME}':80|g' /etc/apache2/httpd.conf
 fi 

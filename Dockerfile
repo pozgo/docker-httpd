@@ -1,14 +1,13 @@
-FROM polinux/supervisor:centos
+FROM polinux/supervisor:alpine
 
 ENV \
       LOG_LEVEL="info" \
       DEFAULT_CONFIG="true"
 
 RUN \
-  rpm --rebuilddb && yum clean all && rm -rf /var/cache/yum && \
-  yum update -y && \
-  yum install -y httpd && \
-  yum clean all && rm -rf /var/cache/yum
+  apk add --update apache2 apache2-utils && \
+  rm -rf /var/cache/apk/* && \
+  mkdir -p /run/apache2/
 
 ADD container-files /
 
