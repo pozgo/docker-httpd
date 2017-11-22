@@ -1,6 +1,6 @@
 # Apache in a Docker with Supervisor (CentOS 7 & Alpine)
 
-[![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-httpd/master.svg)](https://circleci.com/gh/pozgo/docker-httpd)
+[![Build Status](https://travis-ci.org/pozgo/docker-httpd.svg)](https://travis-ci.org/pozgo/docker-httpd)  
 [![GitHub Open Issues](https://img.shields.io/github/issues/pozgo/docker-httpd.svg)](https://github.com/pozgo/docker-httpd/issues)  
 [![Stars](https://img.shields.io/github/stars/pozgo/docker-httpd.svg?style=social&label=Stars)]()
 [![Fork](https://img.shields.io/github/forks/pozgo/docker-httpd.svg?style=social&label=Fork)]()  

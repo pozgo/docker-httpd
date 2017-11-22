@@ -3,13 +3,13 @@ services:
   - docker
 
 before_install:
-   - docker --version
+  - docker --version
 
 script:
 # Build
   - docker build -t polinux/httpd:travis .
 # Start httpd
   - docker run -d -p 8000:80 --name httpd polinux/httpd:travis
-  - while true; do if grep "httpd entered RUNNING state" -a ${CIRCLE_ARTIFACTS}/httpd.log; then break; else sleep 1; fi done
+  - while true; do if docker logs httpd | grep "httpd entered RUNNING state"; then break; else sleep 1; fi done
 # Check connection on port 80
   - curl -sSLi --head http://127.0.0.1:8000/ | grep "HTTP/1.1 200 OK"
