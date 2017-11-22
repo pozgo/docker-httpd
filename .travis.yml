@@ -12,4 +12,4 @@ script:
   - docker run -d -p 8000:80 --name httpd polinux/httpd:travis
   - while true; do if docker logs httpd | grep "httpd entered RUNNING state"; then break; else sleep 1; fi done
 # Check connection on port 80
-  - curl -sSLi http://localhost:8000/images/apache_pb.gif | grep 'HTTP/1.1 200 OK'
+  - curl -sSLi http://localhost:8000 | grep 'HTTP/1.1 200 OK'
