@@ -16,14 +16,6 @@ Felling like supporting me in my projects use donate button. Thank You!
 
 [Docker Image](https://registry.hub.docker.com/u/polinux/httpd/) with Apache server using [polinux/supervisor](https://hub.docker.com/r/polinux/supervisor) docker image as base.
 
-### Versions
-
-* `latest/centos` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-httpd/master.svg)](https://circleci.com/gh/pozgo/docker-httpd)  
-* `alpine` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-httpd/alpine.svg)](https://circleci.com/gh/pozgo/docker-httpd)  
-
-
-**More also versions available through [tags](https://hub.docker.com/r/polinux/httpd/tags/)**
-
 ### Environmental Variable
 
 |Variable|DefaultSettings|Info|
