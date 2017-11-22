@@ -7,7 +7,7 @@ ENV \
 RUN \
   rpm --rebuilddb && yum clean all && rm -rf /var/cache/yum && \
   yum update -y && \
-  yum install -y httpd git && \
+  yum install -y httpd && \
   yum clean all && rm -rf /var/cache/yum
 
 ADD container-files /
