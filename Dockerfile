@@ -5,7 +5,7 @@ ENV \
       DEFAULT_CONFIG="true"
 
 RUN \
-  apk add --update apache2 apache2-utils && \
+  apk add --update apache2 apache2-utils apache2-ldap && \
   rm -rf /var/cache/apk/* && \
   mkdir -p /run/apache2/
 
